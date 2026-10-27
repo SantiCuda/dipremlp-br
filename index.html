@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diprem | Saúde e Segurança Ocupacional</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Consultoria completa e soluções personalizadas em saúde e segurança ocupacional para proteger seu negócio e seus colaboradores.">
+  <link rel="icon" href="assets/logo-diprem.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="topo">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container">
+ 
+      <header class="site-header">
+        <a href="#topo" class="logo" aria-label="Diprem - início">
+          <img src="assets/logo-diprem.png" alt="Diprem Global Services" width="96" height="31">
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="menu">
+          <a href="#servicos">Serviços</a>
+          <a href="#clientes">Nossos clientes</a>
+        </nav>
+      </header>
+ 
+      <div class="hero__grid">
+        <div class="hero__text">
+          <h1>Transforme a segurança e saúde da sua empresa hoje!</h1>
+          <hr class="divider">
+          <p>Consultoria completa e soluções personalizadas para proteger seu negócio e seus colaboradores.</p>
+        </div>
+ 
+        <div class="form-card" id="contato">
+          <h2>Nossos especialistas estão<br>prontos pra te atender!</h2>
+          <!-- data-endpoint: URL que recibe el POST (WordPress/Formspree). Vacío = modo prototipo -->
+          <form id="lead-form" class="lead-form" data-endpoint="" novalidate>
+            <input type="text" name="nome" placeholder="Nome" aria-label="Nome" autocomplete="name" required>
+            <select name="servico" aria-label="Serviço de interesse" required>
+              <option value="" selected disabled>Selecione</option>
+              <option>Consultoria ambiental e organizacional</option>
+              <option>Implementação de sistemas e treinamentos</option>
+              <option>Auditorias de conformidade</option>
+              <option>Segurança em emergências</option>
+              <option>Outro</option>
+            </select>
+            <div class="form-row">
+              <input type="tel" name="telefone" placeholder="Telefone" aria-label="Telefone" autocomplete="tel" pattern="[0-9()+\-\s]{8,}" required>
+              <input type="text" name="empresa" placeholder="Empresa" aria-label="Empresa" autocomplete="organization">
+            </div>
+            <input type="email" name="email" placeholder="E-mail" aria-label="E-mail" autocomplete="email" required>
+            <textarea name="descricao" placeholder="Descrição" aria-label="Descrição" rows="3"></textarea>
+            <!-- honeypot anti-spam -->
+            <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button type="submit" class="btn btn--block">Enviar</button>
+            <p class="form-msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+ 
+  <main>
+    <!-- ============ SERVIÇOS ============ -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <h2 class="section-title">Consultoria completa em saúde e<br>segurança ocupacional</h2>
+        <p class="section-lead">Na Diprem, promovemos uma cultura de prevenção, educando sua equipe sobre riscos que podem afetar a saúde e gerar perdas econômicas.</p>
+ 
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 5h11a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H9l-4 3v-3H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="M19 9h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-1v2l-3-2h-4"/></svg>
+            </div>
+            <h3>Consultoria ambiental e organizacional</h3>
+            <p>Planejamento estratégico para gestão ambiental e organizacional, garantindo conformidade regulatória e otimização de processos sustentáveis.</p>
+          </article>
+ 
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></svg>
+            </div>
+            <h3>Implementação de sistemas e treinamentos especializados</h3>
+            <p>Implementação ágil de sistemas de gestão com treinamentos personalizados, visando eficiência operacional e alinhamento com normas vigentes.</p>
+          </article>
+ 
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M14 21H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v7"/><path d="M8 8h8M8 12h4"/><circle cx="17" cy="17" r="3"/><path d="M19.2 19.2L22 22"/></svg>
+            </div>
+            <h3>Auditorias de conformidade e programas de segurança</h3>
+            <p>Auditorias detalhadas para assegurar regulamentação, junto a programas de segurança personalizados para um ambiente de trabalho seguro.</p>
+          </article>
+        </div>
+ 
+        <div class="center">
+          <a href="#contato" class="btn">Entre em contato</a>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ============ RESULTADOS ============ -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="stats">
+          <div class="stats__text">
+            <h2>Resultados que refletem nossa experiência em segurança</h2>
+            <p>Resultados construídos a partir de experiência prática em campo, capacitação contínua e um compromisso permanente com a prevenção de riscos e a segurança das pessoas.</p>
+          </div>
+          <div class="stats__grid">
+            <div class="stat"><strong translate="no" data-count="1" data-prefix="+" data-suffix="M">+1M</strong><span>Horas-homem<br>por ano</span></div>
+            <div class="stat"><strong translate="no" data-count="800" data-prefix="+">+800</strong><span>Auditorias<br>realizadas</span></div>
+            <div class="stat"><strong translate="no" data-count="4" data-prefix="+" data-suffix=" mil">+4 mil</strong><span>Projetos e<br>Soluções</span></div>
+            <div class="stat"><strong translate="no" data-count="150" data-prefix="+" data-suffix=" mil">+150 mil</strong><span>Recursos<br>auditados</span></div>
+            <div class="stat"><strong translate="no" data-count="8" data-prefix="+" data-suffix=" mil">+8 mil</strong><span>Profissionais<br>qualificados</span></div>
+            <a href="#contato" class="stat stat--cta">Entre em<br>contato</a>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ============ EMERGÊNCIAS ============ -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="emergency">
+          <div class="emergency__media">
+            <img src="assets/rcp-img.jpg" alt="Treinamento de primeiros socorros com manequim de RCP" loading="lazy" data-fallback>
+          </div>
+          <div class="emergency__content">
+            <h2>Segurança em emergências</h2>
+            <p>Garantimos o bem-estar dos seus colaboradores com profissionais qualificados que treinam, detectam e implementam as melhores práticas de segurança.</p>
+            <ul class="checklist">
+              <li>Ambulâncias e TAMP</li>
+              <li>Equipamentos pré-hospitalares</li>
+              <li>Treinamentos de brigadas e socorristas</li>
+              <li>Enfermeiros e médicos do trabalho</li>
+              <li>Programas de segurança</li>
+            </ul>
+            <a href="#contato" class="btn btn--wide">Entre em contato</a>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ============ CLIENTES ============ -->
+    <section class="section" id="clientes">
+      <div class="container">
+        <h2 class="section-title">Nossos clientes</h2>
+        <div class="clients">
+          <div class="client" data-name="Pampa Energía"><img src="assets/clientes/pampa.png" alt="Pampa Energía" loading="lazy" data-fallback></div>
+          <div class="client" data-name="Bayer"><img src="assets/clientes/bayer.png" alt="Bayer" loading="lazy" data-fallback></div>
+          <div class="client" data-name="PepsiCo"><img src="assets/clientes/pepsico.png" alt="PepsiCo" loading="lazy" data-fallback></div>
+          <div class="client" data-name="Siemens"><img src="assets/clientes/siemens.png" alt="Siemens" loading="lazy" data-fallback></div>
+          <div class="client" data-name="CFE"><img src="assets/clientes/cfe.png" alt="Comisión Federal de Electricidad" loading="lazy" data-fallback></div>
+        </div>
+      </div>
+    </section>
+  </main>
+ 
+  <!-- ============ CTA / FOOTER ============ -->
+  <footer class="cta-band">
+    <div class="cta-band__bg" aria-hidden="true"></div>
+    <div class="container">
+      <h2>Soluções sob medida para sua operação</h2>
+      <hr class="divider divider--center">
+      <p>Evitamos incidentes e interrupções, protegendo a continuidade dos negócios e a vida das pessoas: avaliação e mitigação de riscos e implementação de programas de segurança.</p>
+      <a href="#contato" class="btn btn--wide">Entre em contato</a>
+      <div class="footer-logo">
+        <img src="assets/diprem-logo-blanco.png" alt="Diprem Global Services" width="80" height="26">
+      </div>
+    </div>
+  </footer>
+ 
+  <script src="script.js" defer></script>
+</body>
+</html>
